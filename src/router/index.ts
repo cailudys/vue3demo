@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import FormatAttr from '../views/FormatAttr.vue'
+import FormatAttr from '../views/DatePicker/FormatAttr.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
