@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import FormatAttr from '../views/DatePicker/FormatAttr.vue'
+import PosterDesign from '../views/design/PosterDesign.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,8 +13,13 @@ const router = createRouter({
     },
     {
       path: '/datepicker/format',
-      name: 'home',
+      name: 'datepicker',
       component: FormatAttr
+    },
+    {
+      path: '/design/poster',
+      name: 'posterdesign',
+      component: PosterDesign
     }
   ]
 })
