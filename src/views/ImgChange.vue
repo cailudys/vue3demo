@@ -18,7 +18,7 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { ref } from 'vue'
 
 const yourImageSource = 'your-image-url.jpg' // 替换为你的图片 URL
@@ -32,27 +32,27 @@ let start = { x: 0, y: 0 }
 let resizeStart = { x: 0, y: 0 }
 let direction = ''
 
-function startDrag(event) {
+function startDrag(event: any) {
   isDragging.value = true
   start.x = event.clientX - imagePosition.value.x
   start.y = event.clientY - imagePosition.value.y
 }
 
-function doDrag(event) {
+function doDrag(event: any) {
   if (isDragging.value) {
     imagePosition.value.x = event.clientX - start.x
     imagePosition.value.y = event.clientY - start.y
   }
 }
 
-function startResize(event, dir) {
+function startResize(event: any, dir: any) {
   isResizing.value = true
   direction = dir
   resizeStart.x = event.clientX
   resizeStart.y = event.clientY
 }
 
-function doResize(event) {
+function doResize(event: any) {
   if (!isResizing.value) return
 
   let dx = event.clientX - resizeStart.x
