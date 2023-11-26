@@ -39,7 +39,7 @@ window.addEventListener('mousemove', doDrag)
 window.addEventListener('mouseup', endDrag)
 </script>
 
-<style>
+<style scoped>
 .container {
   position: relative;
   width: 800px;
