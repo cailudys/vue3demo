@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import ImgMove from '../views/ImgMove.vue'
 import ImgChange from '../views/ImgChange.vue'
 import Html2Canvas from '../views/Html2Canvas.vue'
+import WateFall from '../views/WateFall.vue'
+
 
 
 const router = createRouter({
@@ -27,6 +29,11 @@ const router = createRouter({
       path: '/shot',
       name: 'shot',
       component: Html2Canvas
+    },
+    {
+      path: '/waterfall',
+      name: 'waterfall',
+      component: WateFall
     }
   ]
 })
